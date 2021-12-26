@@ -11,12 +11,13 @@ public class SnakeLadder {
         System.out.println("Starting Position : " + positionOfPlayer);
         int dice= 0;
         while (positionOfPlayer <= win) {
-
+            dice++;
             int roll_dice = (int) (Math.floor(Math.random() * 10) % 6) + 1;
             System.out.println("Rolling dice We Got: " + roll_dice);
             int playerOption = (int) (Math.floor(Math.random() * 10) % 3) + 1;
 
             switch (playerOption) {
+
                 case no_play:
                     System.out.println("No Play! Your position can not be changed,you are at :  " + positionOfPlayer);
                     break;
@@ -46,7 +47,8 @@ public class SnakeLadder {
                 default:
                     System.out.println("Something went wrong");
             }
-
+            System.out.println("Player current position is : " + positionOfPlayer);
         }
+        System.out.println("Total no Of Dice Rolled : " + dice);
     }
 }
