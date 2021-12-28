@@ -26,7 +26,7 @@ public class SnakeLadder {
                     positionOfPlayer = positionOfPlayer + roll_dice;
                     System.out.println("Congratulation!climb up the ladder:  " + positionOfPlayer);
                     if (positionOfPlayer > win) {
-                        positionOfPlayer = positionOfPlayer + roll_dice;
+                        positionOfPlayer = positionOfPlayer - roll_dice;
                     }
                     else if(positionOfPlayer == win) {
                         System.out.println("You won the match ");
