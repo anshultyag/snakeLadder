@@ -31,15 +31,15 @@ public class SnakeLadder {
                         System.out.println("Position Of Player : " + positionOfPlayer);
                     }
                     break;
-
                 case snake:
+                    positionOfPlayer = positionOfPlayer - roll_dice;
                     if (positionOfPlayer <= 0) {
-                        positionOfPlayer = positionOfPlayer;
-                    } else {
-                        positionOfPlayer = positionOfPlayer - roll_dice;
+                        positionOfPlayer = intial_position;
                         System.out.println("Oops! swallowed by snake  :  " + positionOfPlayer);
-                        break;
-                    }
+                    } else {
+                        System.out.println("Oops! swallowed by snake  :  " + positionOfPlayer);
+                            }
+                         break;
 
                 default:
                     System.out.println("Something went wrong");
