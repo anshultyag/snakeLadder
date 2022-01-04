@@ -8,6 +8,7 @@ public class SnakeLadder {
     public static void main(String[] args) {
         int startPosition = 0;
         System.out.println("Starting Position : " + startPosition);
+        int playerCheck = (int) (Math.floor(Math.random() * 10) % 3) + 1;
 
     }
 }
